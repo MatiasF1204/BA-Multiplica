@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+
+    <!-- Link al css -->
+    <link rel="stylesheet" href="../estilos/contacto.css">
+    <link rel="stylesheet" href="../estilos/MenuFooter.css">
+
+    <!-- Link al font awesome para los iconos -->
+    <script src="https://kit.fontawesome.com/2f3d90d1df.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Menú de la página responsive -->
+    <header class="header" id="idheader">
+
+    </header>
+
+
+    <!-- Sección primera que contiene el mapa y texto de "Dónde encontranos" -->
+    <section id="principal">
+
+        <div class="text">
+            <h2>¿Dónde encontrarnos?</h2>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i>Bacacay 3421, Buenos Aires, Argentina</li>
+                <li><i class="fa-solid fa-clock"></i>Horarios de 9:00 a 20:00 hs</li>
+                <li><i class="fa-solid fa-phone"></i>Teléfono: +54 9 2961 781252</li>
+                <li><i class="fa-solid fa-envelope"></i>ecomodaBSAS@gmail.com</li>
+            </ul>
+
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65131207.47510485!2d-129.75329354141198!3d-4.890456698810026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9846b77f3cf%3A0x45a1d679a4109193!2sEcomoda!5e0!3m2!1ses!2sar!4v1697770809876!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+
+    <!-- Sección del formulario de contacto -->
+    <section class="contacto" id="contacto">
+        <form id="form-contacto" action="https://formspree.io/f/xvojoqgw" method="post">
+            <h2>Formulario de contacto</h2>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <label>Nombre</label>
+                    <input type="text" name="name" class="box" required placeholder="Ingresá tu nombre" maxlength="20"
+                        id="nombre-contacto" onkeyup="validarNombre()" />
+                    <span id="error-nombre"></span>
+                </div>
+                <div class="inputBox">
+                    <label>Apellido</label>
+                    <input type="text" name="apellido" class="box" required placeholder="Ingresá tu apellido"
+                        maxlength="20" id="apellido-contacto" onkeyup="validarApellido()" />
+                    <span id="error-apellido"></span>
+                </div>
+                <div class="inputBox">
+                    <label>Teléfono</label>
+                    <input type="number" name="number" class="box" required placeholder="Ingresá tu teléfono" min="0"
+                        id="telefono-contacto" onkeyup="validarTelefono()" />
+                    <span id="error-tel"></span>
+                </div>
+                <div class="inputBox">
+                    <label>E-mail</label>
+                    <input type="email" name="email" class="box" required placeholder="Ingresá tu correo electrónico"
+                        min="0" id="email-contacto" onkeyup="validarEmail()" />
+                    <span id="error-email"></span>
+                </div>
+                <div class="inputBox">
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" class="box" required placeholder="Ingresá el asunto" maxlength="20"
+                        id="asunto-contacto" onkeyup="validarAsunto()" />
+                    <span id="error-asunto"></span>
+                </div>
+                <div class="inputText">
+                    <label>Mensaje</label>
+                    <textarea type="text" name="text" cols="100" rows="10" class="box" required
+                        placeholder="Escriba aquí su mensaje..." id="mensaje-contacto"
+                        onkeyup="validarMensaje()"></textarea>
+                    <span id="error-mensaje"></span>
+                </div>
+            </div>
+            <div id="enviar">
+                <input type="submit" value="Enviar" class="btn" name="enviar" />
+                <span id="error-envio"></span>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- Footer de la página -->
+    <footer id="idfooter">
+    </footer>
+
+
+    <!-- Link al script -->
+    <script src="../logica/script.js"></script>
+    <script src="../logica/menu.js"></script>
+    <script src="../logica/contacto.js"></script>
+    <script src="../logica/carrito.js"></script>
+
+
+
+</body>
+
+</html>

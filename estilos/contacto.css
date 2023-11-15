@@ -1,0 +1,256 @@
+/* INICIO DEL ESTILO DE LA CLASE PRINCIPAL ------------------------------------------------------------------------------*/
+
+#principal {
+  padding-top: 7%;
+  /* Se usa la propiedad flex para el responsive ubicando los elementos*/
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.text {
+  padding: 20px;
+}
+
+.text h2 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.text ul li {
+  /* Separamos los elementos */
+  margin-bottom: 10px;
+  /* Le damos un color de fondo, un borde y un padding */
+  background-color: rgb(205, 205, 205);
+  border: 2px solid rgb(177, 171, 171);
+  padding: 17px;
+  list-style: none;
+}
+
+.text ul li i {
+  padding-right: 12px;
+}
+
+.map iframe {
+  width: 600px;
+  height: 110%;
+}
+
+@media screen and (max-width: 886px) {
+  .text h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .map {
+    width: 100%;
+  }
+
+  .map iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .map {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .text h2{
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .text ul{
+    margin-top: -20px;
+  }
+}
+
+/* FIN DEL ESTILO DE LA CLASE PRINCIPAL ------------------------------------------------------------------------------*/
+
+
+
+/* ESTILOS DEL FORMULARIO DE CONTACTO ------------------------------------------------------------------*/
+.contacto {
+  margin-top: 60px;
+  padding: 9rem;
+  padding-top: 0;
+  margin-bottom: -100px;
+}
+
+.contacto h2 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacto form {
+  background-color: rgb(254, 252, 252);
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contacto form .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+
+.contacto form .flex .inputBox {
+  padding: 12px;
+  width: 45%;
+}
+
+.contacto form .flex .inputText {
+  width: 100%;
+  padding: .7rem;
+
+}
+
+/* Titulos de los forms */
+.contacto form .flex .inputBox label {
+  font-size: 1.2rem;
+}
+
+/* Tamañano de los placeholders */
+.contacto form .flex .inputBox .box {
+  background-color: rgb(254, 252, 252);
+  width: 100%;
+  padding: .5rem;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+
+/* Tamaño del titulo de mensaje */
+.contacto form .flex .inputText label {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+
+}
+
+.contacto form .flex .inputText .box {
+  margin-top: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: rgb(254, 252, 252);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+
+.contacto form .flex .inputBox span {
+  /* mensajes de validaciones */
+  font-size: 15px;
+  color: rgb(249, 42, 24);
+  font-weight: bold;
+}
+
+.contacto form .flex .inputText span {
+  font-size: 15px;
+  color: rgb(249, 42, 24);
+  font-weight: bold;
+}
+
+.contacto form span {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.contacto #enviar {
+
+  text-align: center;
+
+  .btn {
+    color: black;
+    background-color: rgb(205, 205, 205);
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 8px;
+  }
+
+}
+
+/* formulario de contacto en celular y tablet */
+@media (max-width: 800px) {
+  .contacto {
+    padding: 6rem;
+    padding-top: 0;
+  }
+
+  .contacto form {
+    padding: 1rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacto {
+    padding: 3rem;
+    padding-top: 0;
+  }
+
+  .contacto form {
+    margin-bottom: 70px;
+  }
+
+  .contacto form .flex .inputBox {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contacto {
+    padding: 1rem;
+    padding-top: 0;
+  }
+
+  .contacto form {
+    margin-bottom: 100px;
+  }
+
+  .contacto h2 {
+    font-size: 22px;
+  }
+
+  /* Titulos de los forms */
+  .contacto form .flex .inputBox label {
+    font-size: 1.1rem;
+  }
+
+  .contacto form .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .3rem;
+  }
+
+  /* Tamaño del titulo de mensaje */
+  .contacto form .flex .inputText label {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+
+/* ESTILOS DEL FORMULARIO DE CONTACTO ------------------------------------------------------------------*/

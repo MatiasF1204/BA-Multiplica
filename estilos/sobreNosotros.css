@@ -1,0 +1,170 @@
+
+/* INICIO DEL ESTILO DEL BANNER ------------------------------------------------------------------------------*/
+#ban1{
+    padding-top: 30px;
+}
+.image img {
+    width: 100%;
+    height: 45vw;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.text p {
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 35px;
+    padding-bottom: 30px;
+}
+
+/* Media para celular */
+@media screen and (max-width:500px){
+    #ban1{
+        padding-top: 55px;
+    }
+    .image img{
+        height: 60vw;
+    }
+
+    .text h2{
+        font-size: 18px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .text p{
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 13px;
+        line-height: 26px;
+    }
+}
+/* FIN DEL ESTILO DEL BANNER ------------------------------------------------------------------------------*/
+
+
+
+/* INICIO DEL ESTILO DE LOS ICONS ------------------------------------------------------------------------------*/
+#icons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+#icons div{
+    margin: 10px;
+    /* width: 30%;
+    height: 19vh; */
+}
+
+.nature{
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#icons div:hover{
+    box-shadow: 5px 0 10px rgba(1, 0, 0, 0.6);
+}
+
+.nature img{
+    width: 12vw;
+}
+
+.nature h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.delivery{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.delivery img{
+    width: 12vw;
+}
+
+.delivery h3{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.calidad{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.calidad img{
+    padding-top: 10px;
+    width: 12vw;
+}
+
+.calidad h3{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.women{
+    border-radius: 15px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.women img{
+    padding-top: 10px;
+    width: 12vw;
+}
+
+.women h3{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .nature h3{
+        font-size: 15px;
+    }
+
+    .nature img{
+        padding-top: 10px;
+    }
+
+    .delivery h3{
+        font-size: 15px;
+    }
+
+    .delivery img{
+        padding-top: 10px;
+    }
+
+    .calidad h3{
+        font-size: 15px;
+    }
+
+    .calidad img{
+        padding-top: 20px;
+    }
+    .women h3{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+/* FIN DEL ESTILO DE LOS ICONS ------------------------------------------------------------------------------*/
+
+
+
